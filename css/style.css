@@ -1,3 +1,7 @@
+:root{
+    --background-black: #2e2e2e;
+}
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -20,7 +24,7 @@ header{
 }
 .header-section{
     width: 100%;
-    background-color: rgb(48, 48, 48);
+    background-color: var(--background-black);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,14 +99,56 @@ header{
 }
 .main-section1{
     display: flex;
+    margin-top: 50px;
+    height: 80vh;
 }
 /* Aqui estoy trabajdno el main */
 .main-aside{
-    background-color: thistle;
     width: 30%;
     margin-left: 40px;
 }
 .main-content{
-    background-color: teal;
     width: 70%;
+}
+.main-aside--lista{
+    list-style: none;
+}
+.main-aside--lista ol{
+    list-style: none;
+}
+.lista-item{
+    font-size: 1.6rem;
+    letter-spacing: 0.15rem;
+    font-weight: bold;
+    color: #8f8f8f;
+}
+.lista-elemento span{
+    background-image: url('/images/down-arrow.svg');
+    width: 6px;
+    height: 5px;
+    display: inline-block;
+    background-size: 100%;
+    margin-right: 2px;
+}
+.lista-elemento a{
+    text-decoration: none;
+    color: #323232;
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+}
+/* Agregando estilos al footer */
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: var(--background-black);
+}
+.footer-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-div p{
+    color: white;
+    font-size: 1.6rem;
 }
