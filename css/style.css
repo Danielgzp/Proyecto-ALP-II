@@ -1,5 +1,7 @@
 :root{
     --background-black: #2e2e2e;
+    --letter-grey: #636363;;
+    --soft-grey: #666;
 }
 
 *{
@@ -21,6 +23,15 @@ header{
     min-width: 320px;
     height: 334px;
     background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%); */
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+li{
+    list-style: none;
 }
 .header-section{
     width: 100%;
@@ -108,15 +119,16 @@ header{
     display: flex;
     margin-top: 50px;
     height: 80vh;
-    background-color: rgb(172, 85, 85);
 }
-/* Aqui estoy trabajdno el main */
+
+/* Aqui estoy trabandoo el main */
+
 .main-aside{
     width: 30%;
     margin-left: 40px;
 }
 .main-content{
-    width: 70%;
+    width: 80%;
 }
 .main-aside--lista{
     list-style: none;
@@ -162,7 +174,57 @@ header{
     line-height: 2rem;
     height: 20px;
 }
+.books-container{
+    width: 100%;
+}
+.books-container--portada{
+    width: auto;
+}
+.books-container--portada img{
+    width: 180px;
+}
+.books-container--portada figcaption{
+    text-align: center;
+    color: var(--letter-grey);
+    font-size: 1.6rem;
+    line-height: 1.4rem;
+    font-weight: bold;
+    height: 30px;
+    margin-top: 10px;
+}
+.list-books ul{
+    margin-top: 30px;
+}
+.list-books li{
+    float: left;
+    width: 180px;
+    list-style: none;
+    text-align: center;
+    margin-right: 26px;
+    margin-bottom: 45px;
+}
+.autor a{
+    color: var(--soft-grey);
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.4rem;
+}
+.descargar{
+    border: 2px solid #080808;
+    float: left;
+    width: 100%;
+    color: #080808;
+    font-size: 1rem;
+    height: 30px;
+    line-height: 25px;
+    margin-top: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
 /* Agregando estilos al footer */
+
+
 footer{
     display: flex;
     width: 100%;
