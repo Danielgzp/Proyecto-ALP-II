@@ -108,6 +108,7 @@ header{
     display: flex;
     margin-top: 50px;
     height: 80vh;
+    background-color: rgb(172, 85, 85);
 }
 /* Aqui estoy trabajdno el main */
 .main-aside{
