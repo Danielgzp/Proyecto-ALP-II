@@ -15,8 +15,8 @@
             </figure>
             <div class="header-div">
                 <label for="">
-                    <input type="text" class="header-div--input" placeholder="busque aca su libro"> 
-                    <span class="input-span"><button class="input-button">Buscar</button></span>
+                    <input type="text" class="header-div--input" placeholder="Busca entre los muchos libros disponibles..."> 
+                    <a href=""><button class="input-button"><span>BUSCAR</span></button></a>
                 </label>
             </div>
             <nav class="header-nav">
@@ -37,6 +37,11 @@
                             <span>Hacer <br>una contribucion</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="inicio-sesion">
+                            <span>Iniciar Sesion</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </section>
@@ -48,28 +53,25 @@
             <div class="main-div--aside">
                 <aside class="main-aside">
                     <ul class="main-aside--lista">
-                        <li class="lista-item">LITERATURA Y FICCIÓN
+                        <h3 class="title3">LITERATURA Y FICCIÓN</h3>
                             <ol>
                                 <li class="lista-elemento"><a href=""><span></span>Aventura</a></li>
                             </ol>
-                        </li>
-                        <li class="lista-item">TÉCNICOS Y ACADÉMICOS
+                        <h3 class="title3">TÉCNICO Y ACADÉMICOS</h3>
                             <ol>
                                 <li class="lista-elemento"><a href=""><span></span>Algo 3</a></li> 
                             </ol>
-                        </li>
-                        <li class="lista-item">VIDA PRÁCTICA Y OTROS
+                        <h3 class="title3">VIDA PRÁTICA Y OTROS</h3>
                             <ol>
                                 <li class="lista-elemento"><a href=""><span></span>Algo</a></li> 
                             </ol>
-                        </li>
                     </ul>
                 </aside>
             </div>
             <article class="main-content">
                 <div class="list-books">
-                    <h2>Publicaciones recientes</h2>
-                    <div class="book-container">
+                    <h3 class="title3">Publicaciones recientes</h3>
+                    <div class="books-container">
                         <figure>
                             <img src="./images/libros/descargar-libro-la-escapada.jpg" alt="">
                             <figcaption>La escapada</figcaption>
@@ -80,18 +82,38 @@
                         <br>
                         <a href="">DESCARGAR O LEER ONLINE</a>
                     </div>
+                    <div class="pagination">
+                        <ul>
+                            <li>
+                                <a href="">1</a>
+                                <a href="">2</a>
+                                <a href="">3</a>
+                                <a href="">4</a>
+                                <a href="">5</a>
+                                <a href="">6</a>
+                                <a href="">></a>
+                                <a href="">ÚLTIMO</a>
+                            </li>
+                        </ul>
+                        <div class="counter-pages">Pagina 1 de 216</div>
+                    </div>
                 </div>
                 <div class="publicidad">
-
+                    <figure>
+                        <img src="./images/publicidad-coca-cola.jpg" alt="">
+                        <figcaption>Publicidad</figcaption>
+                    </figure>
                 </div>
             </article>
         </section>
     </main>
     <footer>
-        <div class="footer-div">
+        <section class="footer-left">
             <p>Echo por los panas</p>
+        </section>
+        <section class="footer-right">
             <p>2021 todos los derechos reservados</p>
-        </div>
+        </section>
     </footer>
 </body>
 </html>

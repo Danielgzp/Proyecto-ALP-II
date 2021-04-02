@@ -41,6 +41,7 @@ header{
     height: 35px;
     border-radius: 1px;
     border: 0;
+    padding-left: 15px;
 }
 .input-button{
     width: 160px;
@@ -51,6 +52,7 @@ header{
     line-height: 35px;
     border: 0;
     margin-left: -2px;
+    cursor: pointer;
 }
 .header-nav a{
     text-decoration: none;
@@ -97,6 +99,11 @@ header{
     background-position: center;
     margin-right: 10px;
 }
+.inicio-sesion{
+    display: inline-block;
+    width: 40px;
+    height: 60px;
+}
 .main-section1{
     display: flex;
     margin-top: 50px;
@@ -113,42 +120,69 @@ header{
 .main-aside--lista{
     list-style: none;
 }
+.main-aside--lista li{
+    margin-bottom: 10px;
+}
+
 .main-aside--lista ol{
     list-style: none;
+    margin-top: 10px;
 }
-.lista-item{
-    font-size: 1.6rem;
+.title3{
+    position: relative;
+    font-size: 1.5rem;
     letter-spacing: 0.15rem;
     font-weight: bold;
     color: #8f8f8f;
 }
+.title3::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 35px;
+    background: #a1a1a1;
+    content: '';
+}
 .lista-elemento span{
-    background-image: url('/images/down-arrow.svg');
-    width: 6px;
-    height: 5px;
+    background-image: url('/images/down-arrow2-removebg.png');
+    width: 10px;
+    height: 10px;
     display: inline-block;
     background-size: 100%;
-    margin-right: 2px;
+    margin-right: 4px;
 }
 .lista-elemento a{
     text-decoration: none;
     color: #323232;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     letter-spacing: 0.05rem;
     font-weight: 700;
+    line-height: 2rem;
+    height: 20px;
 }
 /* Agregando estilos al footer */
 footer{
+    display: flex;
     width: 100%;
     height: 80px;
     background-color: var(--background-black);
 }
-.footer-div{
+footer p{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 200;
+    letter-spacing: 0.05rem;
+}
+.footer-left{
     display: flex;
+    width: 50%;
     justify-content: center;
     align-items: center;
 }
-.footer-div p{
-    color: white;
-    font-size: 1.6rem;
+.footer-right{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
 }
