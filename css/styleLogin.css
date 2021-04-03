@@ -1,0 +1,133 @@
+:root{
+    --background-black: #2e2e2e;
+    --letter-grey: #636363;;
+    --soft-grey: #666;
+    --orange: #d4780e;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 8vh;
+    background-color: var(--background-black);
+    display: flex;
+    align-items: center;
+}
+.fondo{
+    background-image: url('/images/fondo2.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 170px;
+    height: 30px;
+    margin-left: 100px;
+}
+.login{
+    display: flex;
+    position: relative;
+    width: 550px;
+    height: 550px;
+    background-color: rgb(29, 29, 29, .95);
+    margin-top: 100px;
+    left: calc(50% - 275px);
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 20px;
+}
+.login-div{
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(53, 53, 53); */
+    justify-content: center;
+    align-items: center;
+    
+}
+h2{
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.4rem;
+    letter-spacing: 0.5px;
+}
+.login-div{
+    border-radius: 0px;
+}
+.email-form{
+    width: 350px;
+    height: 40px;
+}
+.email-form input{
+    width: 350px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #fff;
+    border: 0 #fff;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.4rem;
+}
+.password-form input{
+    width: 350px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #fff;
+    border: 0 #fff;
+    border-radius: 3px;
+    margin-top: 20px;
+    outline: none;
+    font-size: 1.4rem;
+}
+.iniciar-sesion{
+    display: flex;
+    margin-top: 20px;
+    background-color: var(--orange);
+    width: 250px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border: 2px black solid;   
+    border-radius: 7px;
+    position: relative;
+    left: calc(50% - 125px);
+    cursor: pointer;
+    color: white;
+    font-size: 1.6rem;
+    letter-spacing: 0.5px;
+}
+.registrar p{
+    font-size: 1.4rem;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.registrar-button{
+    display: flex;
+    margin-top: 10px;
+    background-color: #fff;
+    width: 250px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border: 2px black solid;   
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
