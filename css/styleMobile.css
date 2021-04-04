@@ -1,0 +1,332 @@
+:root{
+    --background-black: #2e2e2e;
+    --letter-grey: #636363;;
+    --soft-grey: #666;
+    --orange: #f6921e;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+header{
+    width: 100%;
+    /* position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%); */
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+.header-section{
+    background-color: var(--background-black);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    height: 300px;
+}
+.header-figure{
+    margin-right: 10px;
+}
+.header-figure img{
+}
+.search-div{
+}
+.search-input{
+    border-radius: 7px;
+    border: 0;
+    padding: 0 20px;
+    outline: none;
+    width: 270px;
+    height: 30px;
+}
+.input-button{
+    background: var(--orange);
+    text-align: center;
+    color: #fff;
+    border: 0;
+    border-radius: 0 7px 7px 0;
+    cursor: pointer;
+    height: 30px;
+    width: 50px;
+    margin-left: -10px;
+}
+.input-button:hover{
+    background-color: orange;
+}
+.header-nav{
+    position: absolute;
+}
+.header-nav--ul{
+    display: flex;
+
+}
+.header-nav--ul a{
+    color: white;
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-nav--ul a:hover{
+    background-color: rgb(61, 59, 59);
+}
+.header-nav--ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+}
+.icon-book{
+    float: left;
+    margin-right: 5px;
+    background-image: url('/images/libro11-removebg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.icon-book span{
+    float: left;
+    background: url('/images/libro11-removebg.png') no-repeat;
+    background-size: 100%;
+}
+.icon-heart{
+    float: left;
+    margin-right: 5px;
+    background-image: url('/images/corazon3.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.icon-heart span{
+    float: left;
+    background: url('/images/corazon3.png') no-repeat;
+    background-size: 100%;
+}
+/* Aqui estoy trabandoo el main */
+.main-section1{
+    margin-top: 50px;
+}
+.main-aside{
+    margin-left: 60px;
+}
+.main-aside::after{
+    position: absolute;
+    
+    width: 2px;
+    background: #a1a1a1;
+    content: '';
+}
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main-aside--lista{
+    list-style: none;
+}
+.main-aside--lista li{
+    margin-bottom: 10px;
+}
+
+.main-aside--lista ol{
+    list-style: none;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.title3{
+    position: relative;
+    font-size: 1.8rem;
+    letter-spacing: 0.15rem;
+    font-weight: 500;
+    color: #8f8f8f;
+    font-family: 'Roboto',sans-serif;
+    margin-left: 10px;
+}
+.title3::after{
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 50px;
+    background: #a1a1a1;
+    content: '';
+}
+.lista-elemento span{
+    background-image: url('/images/down-arrow2-removebg.png');
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-size: 100%;
+    margin-right: 4px;
+}
+.lista-elemento a{
+    text-decoration: none;
+    color: #323232;
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+.books-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.books-container--portada{
+    width: 100%;
+}
+.books-container--portada img{
+    width: 270px;
+    min-width: 200px;
+    max-width: 500px;
+    border: 4px var(--orange) solid;
+    box-shadow: 0px 5px 10px 2px rgba(31, 26, 11, 0.692);
+}
+.books-container--portada figcaption{
+    text-align: center;
+    color: var(--letter-grey);
+    font-size: 2rem;
+    line-height: 1.4rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.list-books ul{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.list-books--ul li{
+    float: left;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.autor{
+    margin-top: 20px;
+}
+.autor a{
+    color: var(--soft-grey);
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.6rem;
+    
+}
+.descargar{
+    border: 2px solid #080808;
+    padding: 10px;
+    color: #080808;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.descargar a{
+    color: black;
+    letter-spacing: 1px;
+}
+.pagination{
+    float: left;
+    position: relative;
+    display: inline-block;
+    padding-left: 0;
+}
+.pagination a{
+    border: 2px solid #333;
+    float: left;
+    letter-spacing: .06rem;
+    font-size: 1rem;
+    line-height: 16.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 5px;
+    margin: 0 3px;
+    color: var(--soft-grey);
+}
+.counter-pages p{
+    color: var(--soft-grey);
+    float: right;
+    color: #999;
+    letter-spacing: .6px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-right: -50px;
+}
+.publicidad{
+    float: left;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.publicidad figcaption{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: black;
+}
+.publicidad img{
+    width: 250px;
+    min-width: 200px;
+    max-width: 450px;
+}
+.publicidad a{
+    margin-top: 20px;
+    margin: 0 10px;
+}
+
+/* Agregando estilos al footer */
+
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: var(--background-black);
+}
+footer p{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 200;
+    letter-spacing: 0.05rem;
+}
+.footer-left{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    
+}
+.footer-right{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    
+}
