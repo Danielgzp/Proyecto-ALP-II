@@ -14,42 +14,48 @@
 <body>
     <header>
         <section class="header-section">
-            <figure class="header-figure">
-                <img src="./images/lelibros.jpg" alt="">
-            </figure>
-            <form class="search" action="/cuenta.html">
-                <div class="search-div">
-                    <label for="search">
-                        <input type="search" name="search" class="search-input" placeholder="Busca entre los muchos libros disponibles..."> 
-                        <input class="input-button" type="submit" name="search-button">
-                    </label>
-                 </div>
-            </form>
-            <nav class="header-nav">
-                <ul class="header-nav--ul">
-                    <li>
-                        <a href="">
-                            <i class="icon-book">
-                                <span></span>
-                            </i>
-                            <span>Todos <br>los libros</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i class="icon-heart">
-                                <span></span>
-                            </i>
-                            <span>Hacer <br>una contribucion</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/login.html" class="inicio-sesion">
-                            <span>Iniciar Sesion</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="wrapper">
+                <div>
+                    <figure class="header-figure">
+                        <img src="./images/lelibros.jpg" alt="">
+                    </figure>
+                </div>
+                <nav class="header-nav">
+                    <ul class="header-nav--ul">
+                        <li>
+                            <a href="">
+                                <i class="icon-book">
+                                    <span></span>
+                                </i>
+                                <span>Todos <br>los libros</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="icon-heart">
+                                    <span></span>
+                                </i>
+                                <span>Hacer <br>una contribucion</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/login.html" class="inicio-sesion">
+                                <span>Iniciar Sesion</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="search-container">
+                    <form class="search" action="/cuenta.html">
+                        <div class="search-div">
+                            <label for="search">
+                                <input type="search" name="search" class="search-input" placeholder="Busca entre los muchos libros disponibles..."> 
+                                <input class="input-button" type="submit" name="search-button">
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </section>
     </header>
 
@@ -59,7 +65,7 @@
             <aside class="main-aside">
                 <div class="main-div--aside"></div>
                     <ul class="main-aside--lista">
-                        <h3 class="title3 .lista">LITERATURA Y FICCIÓN</h3>
+                        <h2 class="title-list">LITERATURA Y FICCIÓN</h2>
                             <ol>
                                 <li class="lista-elemento"><a href=""><span></span>Aventura</a></li>
                                 <li class="lista-elemento"><a href=""><span></span>Algo</a></li> 
@@ -73,14 +79,14 @@
                                 <li class="lista-elemento"><a href=""><span></span>Algo</a></li> 
 
                             </ol>
-                        <h3 class="title3 .lista">TÉCNICO Y ACADÉMICOS</h3>
+                        <h2 class="title-list">TÉCNICO Y ACADÉMICOS</h2>
                             <ol>
                                 <li class="lista-elemento"><a href=""><span></span>Algo 3</a></li> 
                                 <li class="lista-elemento"><a href=""><span></span>Algo</a></li> 
                                 <li class="lista-elemento"><a href=""><span></span>Algo</a></li>
                                 <li class="lista-elemento"><a href=""><span></span>Algo</a></li>  
                             </ol>
-                        <h3 class="title3 .lista">VIDA PRÁTICA Y OTROS</h3>
+                        <h2 class="title-list">VIDA PRÁTICA Y OTROS</h2>
                             <ol>
                                 <li class="lista-elemento"><a href=""><span></span>Algo</a></li> 
                                 <li class="lista-elemento"><a href=""><span></span>Algo</a></li> 
@@ -93,8 +99,7 @@
                 </div>
              </aside>
             <article class="main-content">
-                <div class="list-books">
-                    <h3 class="title3 .books">Publicaciones recientes</h3>
+                    <h2 class="title-books">Publicaciones recientes</h3>
                     <div class="books-container">
                         <ul class="list-books--ul">
                             <li>
@@ -219,49 +224,74 @@
                                         <a href="">DESCARGAR O LEER ONLINE</a>
                                     </div>
                                 </li>
+                                <!-- sfmasopmxcsafas -->
+                                <li>
+                                    <figure class="books-container--portada">
+                                        <a href="">
+                                            <img src="./images/libros/descargar-libro-cronicas-de-bustos-domecq-h-bustos-domecq.jpg" alt="">
+                                        </a>
+                                        <figcaption>Crónicas de Bustos Domecq</figcaption>
+                                    </figure>
+                                    <div class="autor">
+                                        <a href="">Jorge Luis Borges</a>
+                                    </div>
+                                    <div class="descargar">
+                                        <a href="">DESCARGAR O LEER ONLINE</a>
+                                    </div>
+                                </li>
                             
 
                         </ul>
                     </div>
                     <div class="pagination">
-                        <ul>
-                            <li>
-                                <a href="">1</a>
-                                <a href="">2</a>
-                                <a href="">3</a>
-                                <a href="">4</a>
-                                <a href="">5</a>
-                                <a href="">6</a>
-                                <a href="">></a>
-                                <a href="">ÚLTIMO</a>
-                            </li>
-                        </ul>
+                        <div class="number-pages">
+                            <ul>
+                                <li>
+                                    <a href="">1</a>
+                                    <a href="">2</a>
+                                    <a href="">3</a>
+                                    <a href="">4</a>
+                                    <a href="">5</a>
+                                    <a href="">6</a>
+                                    <a href="">></a>
+                                    <a href="">ÚLTIMO</a>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="counter-pages">
                             <p>Pagina 1 de 216</p>
                         </div>
                     </div>
                 </div>
-                <div class="publicidad">
+            </article>
+        </section>
+        <section class="main-section2">
+            <div class="publicidad">
+                <div class="publi1">
                     <a href="">
                     <figure>
                         <img src="./images/publicidad-coca-cola.jpg" alt="">
                         <figcaption>Publicidad</figcaption>
                     </figure>
                     </a>
+                </div>
+                <div class="publi2">
                     <a href="">
                         <figure>
                             <img src="./images/publicidad/nike.png" alt="">
                             <figcaption>Publicidad</figcaption>
                         </figure>
                     </a>
+                </div>
+                <div class="publi3">
                     <a href="">
-                         <figure>
+                        <figure>
                             <img src="./images/publicidad/mcdonalds.png" alt="">
                             <figcaption>Publicidad</figcaption>
                         </figure>
                     </a>
                 </div>
-            </article>
+            </div>
         </section>
     </main>
     <footer>

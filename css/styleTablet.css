@@ -35,92 +35,110 @@ li{
     list-style: none;
 }
 .header-section{
+    width: 100%;
     background-color: var(--background-black);
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 15px 0;
-    height: 300px;
+    height: 110px;
+}
+.wrapper{
+    margin: 0 auto;
 }
 .header-figure{
     margin-right: 10px;
 }
 .header-figure img{
+    margin-left: 10px;
+    height: 30px;
+    float: left;
 }
 .search-div{
+    margin: 0 auto;
+}
+.searh-container{
+    margin-bottom: 20px;
 }
 .search-input{
+    width: 350px;
+    height: 40px;
     border-radius: 7px;
     border: 0;
     padding: 0 20px;
     outline: none;
-    width: 270px;
-    height: 30px;
+    margin-top: 15px;
 }
 .input-button{
+    width: 150px;
     background: var(--orange);
     text-align: center;
     color: #fff;
+    height: 40px;
     border: 0;
+    margin-left: -7px;
     border-radius: 0 7px 7px 0;
     cursor: pointer;
-    height: 30px;
-    width: 50px;
-    margin-left: -10px;
 }
 .input-button:hover{
     background-color: orange;
 }
 .header-nav{
+    top: 15px;
+    margin-left: 190px;
     position: absolute;
 }
 .header-nav--ul{
     display: flex;
-
+}
+.header-nav--ul li{
+    margin-right: 10px;
 }
 .header-nav--ul a{
     color: white;
     font-family: 'Roboto',sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: lighter;
     letter-spacing: 1px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .header-nav--ul a:hover{
     background-color: rgb(61, 59, 59);
 }
-.header-nav--ul li{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 25px;
-}
 .icon-book{
     float: left;
+    width: 30px;
     margin-right: 5px;
+    height: 20px;
     background-image: url('/images/libro11-removebg.png');
     background-size: 100%;
     background-repeat: no-repeat;
 }
 .icon-book span{
     float: left;
+    height: 100%;
+    width: 100%;
     background: url('/images/libro11-removebg.png') no-repeat;
     background-size: 100%;
 }
 .icon-heart{
     float: left;
+    width: 20px;
     margin-right: 5px;
+    height: 20px;
     background-image: url('/images/corazon3.png');
     background-size: 100%;
     background-repeat: no-repeat;
 }
 .icon-heart span{
     float: left;
+    height: 100%;
+    width: 100%;
     background: url('/images/corazon3.png') no-repeat;
     background-size: 100%;
+}
+.inicio-sesion{
+    
 }
 
 /* Aqui estoy trabandoo el main */
@@ -132,16 +150,7 @@ li{
 /* Este es el aside del main */
 .main-aside{
     width: 100%;
-    margin-left: 5px;
-}
-.main-aside::after{
-    position: absolute;
-    left: 150px;
-    height: 600px;
-    top: 440px;
-    width: 2px;
-    background: #a1a1a1;
-    content: '';
+    margin-left: 20px;
 }
 .main-content{
     margin-right: 10px;
@@ -163,26 +172,28 @@ li{
     margin-top: 20px;
     padding-left: 10px;
 }
-.title3 .lista{
+.title-list{
+    position: relative;
     width: 100%;
+    font-size: 1.4rem;
+    letter-spacing: 0.15rem;
+    font-weight: 500;
+    color: #8f8f8f;
+    font-family: 'Roboto', sans-serif;;
+}
+.title-books{
     position: relative;
     font-size: 1.4rem;
     letter-spacing: 0.15rem;
     font-weight: 500;
     color: #8f8f8f;
-    font-family: 'Roboto',sans-serif;;
-}
-.title3 .books{
+    font-family: 'Roboto', sans-serif;;
     margin-left: 60px;
-    width: 100%;
-    position: relative;
-    font-size: 1.4rem;
-    letter-spacing: 0.15rem;
-    font-weight: 500;
-    color: #8f8f8f;
-    font-family: 'Roboto',sans-serif;;
 }
-.title3::after{
+.title-list{
+    font-size: 1.4rem;
+}
+.title-books::after{
     position: absolute;
     bottom: -5px;
     left: 0;
@@ -190,6 +201,16 @@ li{
     width: 50px;
     background: #a1a1a1;
     content: '';
+}
+.title-list::after{
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 50px;
+    background: #a1a1a1;
+    content: '';
+    
 }
 .lista-elemento span{
     background-image: url('/images/down-arrow2-removebg.png');
@@ -235,6 +256,9 @@ li{
     height: 30px;
     margin-top: 15px;
 }
+.list-books{
+    width: 100%;
+}
 .list-books ul{
     margin-top: 30px;
     width: 100%;
@@ -245,12 +269,15 @@ li{
 }
 .list-books--ul li{
     float: left;
-    width: 130px;
+    width: 160px;
     list-style: none;
     text-align: center;
-    margin-right: 26px;
+    margin-left: 10px;
     margin-bottom: 45px;
 
+}
+.autor{
+    margin-top: 20px;
 }
 .autor a{
     color: var(--soft-grey);
@@ -259,22 +286,22 @@ li{
 }
 .descargar{
     border: 2px solid #080808;
-    float: left;
-    width: 100%;
     color: #080808;
-    font-size: 1rem;
-    height: 30px;
-    line-height: 25px;
-    margin-top: 15px;
-    font-weight: 700;
+    font-size: 0.9rem;
+    height: auto;
+    line-height: 11px;
+    margin-top: 10px;
     text-transform: uppercase;
+    padding: 6px;
+}
+.descargar a{
+    color: black;
+    letter-spacing: 0.5px;
 }
 .pagination{
-    float: left;
+    display: flex;
     width: 100%;
-    position: relative;
-    display: inline-block;
-    padding-left: 0;
+    margin: 0 auto;
 }
 .pagination a{
     border: 2px solid #333;
@@ -289,14 +316,21 @@ li{
     margin: 0 3px;
     color: var(--soft-grey);
 }
+.counter-pages{
+    margin-top: -15px;
+    width: 20%;
+    margin-right: 75px;
+    display: flex;
+    align-items: center;
+}
 .counter-pages p{
-    color: var(--soft-grey);
-    float: right;
+    
     color: #999;
     letter-spacing: .6px;
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
+    
 }
 .publicidad{
     float: left;
@@ -325,7 +359,6 @@ li{
 footer{
     display: flex;
     width: 100%;
-    height: 50px;
     background-color: var(--background-black);
 }
 footer p{
@@ -339,10 +372,12 @@ footer p{
     width: 50%;
     justify-content: center;
     align-items: center;
+    padding: 5px 15px;
 }
 .footer-right{
     display: flex;
     width: 50%;
     justify-content: center;
     align-items: center;
+    padding: 10px 15px;
 }

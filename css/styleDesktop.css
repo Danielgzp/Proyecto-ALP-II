@@ -36,40 +36,41 @@ li{
 }
 .header-section{
     width: 100%;
-    height: 70px;
     background-color: var(--background-black);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 0;
+    padding: 10px 0;
 }
-.header-figure{
-    margin-right: 10px;
-}
-.header-figure img{
-    width: 170px;
-    height: 30px;
+.wrapper{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 .search-div{
-    margin-right: 230px;
+    margin-right: 290px;
+    margin-top: -15px;
 }
 .search-input{
-    width: 350px;
-    height: 40px;
+    width: 450px;
+    height: 45px; 
     border-radius: 7px;
     border: 0;
-    padding: 0 20px;
+    padding: 0 20px; 
     outline: none;
 }
 .input-button{
-    width: 160px;
+    width: 100px;
     background: var(--orange);
     text-align: center;
     color: #fff;
-    height: 40px;
-    line-height: 35px;
+    height: 45px;
     border: 0;
-    margin-left: -7px;
+    margin-left: -10px; 
     border-radius: 0 7px 7px 0;
     cursor: pointer;
 }
@@ -78,12 +79,11 @@ li{
 }
 .header-nav{
     position: absolute;
-    right: 15px;
-    top: 7px;
+    right: 0px;
+    top: 10px;
 }
 .header-nav--ul{
     display: flex;
-
 }
 .header-nav--ul a{
     color: white;
@@ -99,18 +99,17 @@ li{
     background-color: rgb(61, 59, 59);
 }
 .header-nav--ul li{
-    width: 100px;
-    height: 50px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 25px;
+    margin-right: 10px;
 }
 .icon-book{
     float: left;
-    width: 70px;
+    width: 50px;
+    height: 30px;
     margin-right: 5px;
-    height: 40px;
     background-image: url('/images/libro11-removebg.png');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -126,7 +125,7 @@ li{
     float: left;
     width: 40px;
     margin-right: 5px;
-    height: 35px;
+    height: 40px;
     background-image: url('/images/corazon3.png');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -142,17 +141,18 @@ li{
     height: 45px;
 }
 .main-section1{
+    margin-top: 60px;
     display: flex;
-    margin-top: 50px;
+    
 }
 
 /* Aqui estoy trabandoo el main */
 
 .main-aside{
-    width: 100%;
+    width: 20%;
     margin-left: 60px;
 }
-.main-aside::after{
+/* .main-aside::after{
     position: absolute;
     left: 315px;
     height: 600px;
@@ -160,10 +160,8 @@ li{
     width: 2px;
     background: #a1a1a1;
     content: '';
-}
-.main-content{
-    margin-right: 50px;
-}
+} */
+
 .main-aside--lista{
     list-style: none;
     width: 100%;
@@ -177,16 +175,10 @@ li{
     margin-top: 20px;
     padding-left: 20px;
 }
-.title3{
-    width: 100%;
-    position: relative;
-    font-size: 1.4rem;
-    letter-spacing: 0.15rem;
-    font-weight: 500;
-    color: #8f8f8f;
-    font-family: 'Roboto',sans-serif;;
+.title-books{
+    margin-left: 40px;
 }
-.title3::after{
+.title::after{
     position: absolute;
     bottom: -5px;
     left: 0;
@@ -212,14 +204,19 @@ li{
     line-height: 2rem;
     height: 20px;
 }
+.main-content{
+    width: 80%;
+}
 .books-container{
-    width: 100%;
 }
 .books-container--portada{
-    width: auto;
+    
+}
+.list-books{
 }
 .books-container--portada img{
-    width: 170px;
+    min-width: 140px;
+    max-width: 200px;
     border: 4px var(--orange) solid;
     box-shadow: 0px 5px 10px rgba(31, 26, 11, 0.692);
 }
@@ -233,16 +230,13 @@ li{
     margin-top: 15px;
 }
 .list-books ul{
-    margin-top: 30px;
-    width: 100%;
 }
 .list-books--ul li{
     float: left;
-    width: 180px;
-    list-style: none;
+    width: 160px;
+    margin-right: 10px;
     text-align: center;
-    margin-right: 26px;
-    margin-bottom: 45px;
+    margin-bottom: 50px;
 }
 .autor a{
     color: var(--soft-grey);
@@ -251,15 +245,13 @@ li{
 }
 .descargar{
     border: 2px solid #080808;
-    float: left;
-    width: 100%;
-    color: #080808;
-    font-size: 1rem;
-    height: 30px;
-    line-height: 25px;
-    margin-top: 15px;
+    font-size: 0.9rem;
+    height: auto;
+    line-height: 11px;
+    margin-top: 10px;
     font-weight: 700;
     text-transform: uppercase;
+    padding: 6px;
 }
 .pagination{
     float: left;
