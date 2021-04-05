@@ -1,5 +1,6 @@
 :root{
     --background-black: #2e2e2e;
+    --background-black2: #3d3d3d;
     --letter-grey: #636363;;
     --soft-grey: #666;
     --orange: #f6921e;
@@ -91,12 +92,11 @@ li{
 .header-nav{
     width: 120px;
     display: none;
-    background-color: var(--background-black);
+    background-color: var(--background-black2);
 }
 .header-nav--ul{
     display: flex;
     flex-direction: column;
-    padding: 1px;
 }
 .header-nav--ul li{
     border: 2px black solid;

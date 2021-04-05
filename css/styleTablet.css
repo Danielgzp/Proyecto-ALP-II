@@ -55,15 +55,19 @@ li{
     height: 30px;
     float: left;
 }
-.search-div{
-    margin: 0 auto;
-}
-.searh-container{
+.search-container{
+    width: 95%;
     margin-bottom: 20px;
 }
+.search-div{
+    width: 90%;
+    margin-top: 0;
+}
+
 .search-input{
-    width: 350px;
-    height: 40px;
+    min-width: 270px;
+    max-width: 350px;
+    height: 35px;
     border-radius: 7px;
     border: 0;
     padding: 0 20px;
@@ -75,7 +79,7 @@ li{
     background: var(--orange);
     text-align: center;
     color: #fff;
-    height: 40px;
+    height: 35px;
     border: 0;
     margin-left: -7px;
     border-radius: 0 7px 7px 0;
@@ -84,16 +88,10 @@ li{
 .input-button:hover{
     background-color: orange;
 }
-.header-nav{
-    top: 15px;
-    margin-left: 190px;
-    position: absolute;
-}
 .header-nav--ul{
     display: flex;
 }
 .header-nav--ul li{
-    margin-right: 10px;
 }
 .header-nav--ul a{
     color: white;
@@ -137,10 +135,6 @@ li{
     background: url('/images/corazon3.png') no-repeat;
     background-size: 100%;
 }
-.inicio-sesion{
-    
-}
-
 /* Aqui estoy trabandoo el main */
 
 
@@ -148,9 +142,13 @@ li{
     display: flex;
 }
 /* Este es el aside del main */
+.categorias{
+    display: none;
+}
 .main-aside{
     width: 100%;
     margin-left: 20px;
+    display: inline;
 }
 .main-content{
     margin-right: 10px;
@@ -172,6 +170,9 @@ li{
     margin-top: 20px;
     padding-left: 10px;
 }
+.menu-container{
+    margin-right: 25px;
+}
 .title-list{
     position: relative;
     width: 100%;
@@ -185,7 +186,7 @@ li{
     position: relative;
     font-size: 1.4rem;
     letter-spacing: 0.15rem;
-    font-weight: 500;
+    font-weight: bold;
     color: #8f8f8f;
     font-family: 'Roboto', sans-serif;;
     margin-left: 60px;
@@ -317,9 +318,8 @@ li{
     color: var(--soft-grey);
 }
 .counter-pages{
-    margin-top: -15px;
-    width: 20%;
-    margin-right: 75px;
+    width: 25%;
+    float: right;
     display: flex;
     align-items: center;
 }
@@ -333,13 +333,17 @@ li{
     
 }
 .publicidad{
-    float: left;
     margin-top: 60px;
     margin-bottom: 50px;
     width: 100%;
     display: flex;
+    justify-content: center;
     text-align: center;
 }
+.publi1, .publi2, .publi3{
+    margin: 0 15px;
+}
+
 .publicidad figcaption{
     font-weight: bold;
     font-size: 1.2rem;
