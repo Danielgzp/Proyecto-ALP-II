@@ -133,7 +133,8 @@ li{
     margin-top: 50px;
 }
 .main-aside{
-    margin-left: 60px;
+    margin-left: 20px;
+    display: none;
 }
 .main-aside::after{
     position: absolute;
@@ -167,6 +168,26 @@ li{
     color: #8f8f8f;
     font-family: 'Roboto',sans-serif;
     margin-left: 10px;
+}
+.title-categoria{
+    width: 100%;
+    position: relative;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #323232;
+    font-family: 'Roboto',sans-serif;
+    margin-left: 10px;
+    display: inline-block;
+    text-align: left;
+}
+.title-categoria span{
+    width: 50px;
+    height: 30px;
+    background-image: url('/images/boton2-removebg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    float: left;
 }
 .title-books::after{
     position: absolute;
