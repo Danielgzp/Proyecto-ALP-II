@@ -41,7 +41,6 @@ li{
     justify-content: center;
     align-items: center;
     padding: 15px 0;
-    height: 250px;
 }
 .wrapper{
     width: 100%;
@@ -51,8 +50,20 @@ li{
     justify-content: center;
     align-items: center;
 }
+.logo{
+    width: 100%;
+    margin-left: 10px;
+}
 .header-figure{
-    margin-right: 10px;
+    margin-right: 20px;
+    width: 100%;
+}
+.header-figure img{
+    min-width: 200px;
+    max-width: 60%;
+}
+.search-div{
+    margin-top: 20px;
 }
 .search-input{
     border-radius: 7px;
@@ -61,6 +72,7 @@ li{
     outline: none;
     width: 270px;
     height: 30px;
+    
 }
 .input-button{
     background: var(--orange);
@@ -77,13 +89,22 @@ li{
     background-color: orange;
 }
 .header-nav{
-    position: absolute;
+    width: 120px;
+    display: none;
+    background-color: var(--background-black);
 }
 .header-nav--ul{
     display: flex;
-    width: 100%;
-    margin: 0 auto;
+    flex-direction: column;
+    padding: 1px;
 }
+.header-nav--ul li{
+    border: 2px black solid;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}
+
 .header-nav--ul a{
     color: white;
     font-family: 'Roboto',sans-serif;
@@ -97,14 +118,7 @@ li{
 .header-nav--ul a:hover{
     background-color: rgb(61, 59, 59);
 }
-.header-nav--ul li{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 10px;
-    
-}
-.icon-book{
+/* .icon-book{
     float: left;
     margin-right: 5px;
     background-image: url('/images/libro11-removebg.png');
@@ -127,7 +141,7 @@ li{
     float: left;
     background: url('/images/corazon3.png') no-repeat;
     background-size: 100%;
-}
+} */
 /* Aqui estoy trabandoo el main */
 .main-section1{
     margin-top: 50px;
@@ -169,8 +183,38 @@ li{
     font-family: 'Roboto',sans-serif;
     margin-left: 10px;
 }
-.title-categoria{
+
+.menu-container{
+    position: absolute;
+    right: 10px;
+    top: 25px;
+}
+.title-menu{
+    color: white;
+    position: relative;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Roboto',sans-serif;
+    margin-left: 10px;
+    display: inline-block;
+    text-align: right;
     width: 100%;
+}
+.title-menu span{
+    width: 50px;
+    height: 30px;
+    background-image: url('/images/boton-bueno.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    float: right;
+    margin-top: -3px;
+}
+.categorias{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.title-categoria{
     position: relative;
     font-size: 1.8rem;
     letter-spacing: 1px;

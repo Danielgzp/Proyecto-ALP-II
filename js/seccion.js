@@ -3,6 +3,9 @@ $(document).ready(function(){
 
     $('#btn-togle').on('click', function(){
         $('.main-aside').slideToggle();
+    });
 
+    $('#btn-togle--menu').on('click', function(){
+        $('.header-nav').slideToggle();
     });
 });
