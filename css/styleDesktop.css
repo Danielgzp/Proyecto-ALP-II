@@ -37,40 +37,49 @@ li{
 .header-section{
     width: 100%;
     background-color: var(--background-black);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 10px 0;
 }
 .wrapper{
-    padding: 0;
-    margin: 0;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
-.search-div{
-    margin-right: 290px;
-    margin-top: -15px;
+.logo{
+    width: auto;
+    margin-left: 4-px;
+}
+.header-figure img{
+   
+}
+.search-container{
+    margin: 0;
+    width: auto;
+    margin-bottom: 15px;
+}
+.menu{
+    position: static;
 }
 .search-input{
-    width: 450px;
-    height: 45px; 
+    width: 350px;
+    height: 40px;
     border-radius: 7px;
     border: 0;
     padding: 0 20px; 
     outline: none;
 }
+.search-div{
+    margin: 0;
+    width: auto;
+}
 .input-button{
-    width: 100px;
+    width: 70px;
+    height: 40px;
     background: var(--orange);
     text-align: center;
     color: #fff;
-    height: 45px;
     border: 0;
-    margin-left: -10px; 
     border-radius: 0 7px 7px 0;
     cursor: pointer;
 }
@@ -78,9 +87,7 @@ li{
     background-color: orange;
 }
 .header-nav{
-    position: absolute;
-    right: 0px;
-    top: 10px;
+    
 }
 .header-nav--ul{
     display: flex;
@@ -105,7 +112,7 @@ li{
     justify-content: center;
     margin-right: 10px;
 }
-.icon-book{
+/* .icon-book{
     float: left;
     width: 50px;
     height: 30px;
@@ -139,7 +146,7 @@ li{
 }
 .inicio-sesion{
     height: 45px;
-}
+} */
 .main-section1{
     margin-top: 60px;
     display: flex;
@@ -314,7 +321,7 @@ footer{
 }
 footer p{
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 200;
     letter-spacing: 0.05rem;
 }
