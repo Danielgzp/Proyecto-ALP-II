@@ -1,5 +1,6 @@
 :root{
     --background-black: #2e2e2e;
+    --background-black2: #3d3d3d;
     --letter-grey: #636363;;
     --soft-grey: #666;
     --orange: #f6921e;
@@ -35,56 +36,73 @@ li{
     list-style: none;
 }
 .header-section{
-    width: 100%;
-    height: 70px;
     background-color: var(--background-black);
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 15px 0;
 }
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 100%;
+    margin-left: 10px;
+}
 .header-figure{
-    margin-right: 10px;
+    margin-right: 20px;
+    width: 100%;
 }
 .header-figure img{
-    width: 170px;
-    height: 30px;
+    width: 180px;
 }
 .search-div{
-    margin-right: 230px;
+    margin-top: 20px;
 }
 .search-input{
-    width: 350px;
-    height: 40px;
     border-radius: 7px;
     border: 0;
     padding: 0 20px;
     outline: none;
+    width: 270px;
+    height: 30px;
 }
 .input-button{
-    width: 160px;
     background: var(--orange);
     text-align: center;
     color: #fff;
-    height: 40px;
-    line-height: 35px;
     border: 0;
-    margin-left: -7px;
     border-radius: 0 7px 7px 0;
     cursor: pointer;
+    height: 30px;
+    width: 50px;
+    margin-left: -10px;
 }
 .input-button:hover{
     background-color: orange;
 }
 .header-nav{
-    position: absolute;
-    right: 15px;
-    top: 7px;
+    width: 120px;
+    display: none;
+    background-color: var(--background-black2);
 }
 .header-nav--ul{
     display: flex;
-
+    flex-direction: column;
 }
+.header-nav--ul li{
+    border: 2px black solid;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}
+
 .header-nav--ul a{
     color: white;
     font-family: 'Roboto',sans-serif;
@@ -98,75 +116,52 @@ li{
 .header-nav--ul a:hover{
     background-color: rgb(61, 59, 59);
 }
-.header-nav--ul li{
-    width: 100px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 25px;
-}
-.icon-book{
+/* .icon-book{
     float: left;
-    width: 70px;
     margin-right: 5px;
-    height: 40px;
     background-image: url('/images/libro11-removebg.png');
     background-size: 100%;
     background-repeat: no-repeat;
 }
 .icon-book span{
     float: left;
-    height: 100%;
-    width: 100%;
     background: url('/images/libro11-removebg.png') no-repeat;
     background-size: 100%;
 }
 .icon-heart{
     float: left;
-    width: 40px;
     margin-right: 5px;
-    height: 35px;
     background-image: url('/images/corazon3.png');
     background-size: 100%;
     background-repeat: no-repeat;
 }
 .icon-heart span{
     float: left;
-    height: 100%;
-    width: 100%;
     background: url('/images/corazon3.png') no-repeat;
     background-size: 100%;
-}
-.inicio-sesion{
-    height: 45px;
-}
+} */
+/* Aqui estoy trabandoo el main */
 .main-section1{
-    display: flex;
     margin-top: 50px;
 }
-
-/* Aqui estoy trabandoo el main */
-
 .main-aside{
-    width: 100%;
-    margin-left: 60px;
+    margin-left: 20px;
+    display: none;
 }
 .main-aside::after{
     position: absolute;
-    left: 315px;
-    height: 600px;
-    bottom: 125px;
     width: 2px;
     background: #a1a1a1;
     content: '';
 }
 .main-content{
-    margin-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
 }
 .main-aside--lista{
     list-style: none;
-    width: 100%;
 }
 .main-aside--lista li{
     margin-bottom: 10px;
@@ -177,20 +172,89 @@ li{
     margin-top: 20px;
     padding-left: 20px;
 }
-.title3{
-    width: 100%;
-    position: relative;
-    font-size: 1.4rem;
-    letter-spacing: 0.15rem;
-    font-weight: 500;
-    color: #8f8f8f;
-    font-family: 'Roboto',sans-serif;;
+.menu{
+    position: absolute;
+    right: 10px;
+    top: 20px;
 }
-.title3::after{
+.title-menu{
+    color: white;
+    position: relative;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Roboto',sans-serif;
+    margin-left: 10px;
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+}
+.title-menu span{
+    width: 50px;
+    height: 30px;
+    background-image: url('/images/boton-bueno.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    float: right;
+    margin-top: -3px;
+}
+.categorias{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.title-categoria{
+    position: relative;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #323232;
+    font-family: 'Roboto',sans-serif;
+    margin-left: 10px;
+    display: inline-block;
+    text-align: left;
+}
+.title-categoria span{
+    width: 50px;
+    height: 30px;
+    background-image: url('/images/boton2-removebg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    float: left;
+}
+.title-books{
+    width: 100%;
+    text-align: left;
+    position: relative;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    color: #8f8f8f;
+    font-family: 'Roboto',sans-serif;
+    margin-left: 20px;
+}
+.title-books::after{
     position: absolute;
     bottom: -5px;
     left: 0;
-    height: 2px;
+    height: 3px;
+    width: 50px;
+    background: #a1a1a1;
+    content: '';
+}
+.title-list{
+    position: relative;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    color: #8f8f8f;
+    font-family: 'Roboto',sans-serif;
+    margin-left: 10px;
+}
+.title-list::after{
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 3px;
     width: 50px;
     background: #a1a1a1;
     content: '';
@@ -210,70 +274,75 @@ li{
     letter-spacing: 0.05rem;
     font-weight: 700;
     line-height: 2rem;
-    height: 20px;
 }
 .books-container{
     width: 100%;
+    margin-top: 15px;
 }
 .books-container--portada{
-    width: auto;
+    width: 100%;
 }
 .books-container--portada img{
-    width: 170px;
+    width: 270px;
     border: 4px var(--orange) solid;
-    box-shadow: 0px 5px 10px rgba(31, 26, 11, 0.692);
+    box-shadow: 0px 5px 10px 2px rgba(31, 26, 11, 0.692);
 }
 .books-container--portada figcaption{
     text-align: center;
     color: var(--letter-grey);
-    font-size: 1.6rem;
+    font-size: 2rem;
     line-height: 1.4rem;
     font-weight: bold;
-    height: 30px;
     margin-top: 15px;
 }
-.list-books ul{
+.list-books--ul{
     margin-top: 30px;
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
 .list-books--ul li{
     float: left;
-    width: 180px;
     list-style: none;
     text-align: center;
-    margin-right: 26px;
-    margin-bottom: 45px;
+    margin-bottom: 50px;
+}
+.autor{
+    margin-top: 20px;
 }
 .autor a{
     color: var(--soft-grey);
     font-family: 'Roboto',sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    
 }
 .descargar{
     border: 2px solid #080808;
-    float: left;
-    width: 100%;
+    padding: 10px;
     color: #080808;
-    font-size: 1rem;
-    height: 30px;
-    line-height: 25px;
-    margin-top: 15px;
+    font-size: 1.4rem;
     font-weight: 700;
     text-transform: uppercase;
+    margin-top: 20px;
+}
+.descargar a{
+    color: black;
+    letter-spacing: 1px;
 }
 .pagination{
-    float: left;
     width: 100%;
-    position: relative;
-    display: inline-block;
-    padding-left: 0;
+    margin-left: 10px;
+    display: flex;
+    
+}
+.number-pages{
+    width: 70%;
 }
 .pagination a{
     border: 2px solid #333;
-    float: left;
     letter-spacing: .06rem;
     font-size: 1rem;
-    height: 20px;
     line-height: 16.5px;
     font-weight: 700;
     text-transform: uppercase;
@@ -281,12 +350,14 @@ li{
     margin: 0 3px;
     color: var(--soft-grey);
 }
+.counter-pages{
+    width: 30%;
+}
 .counter-pages p{
     color: var(--soft-grey);
-    float: right;
     color: #999;
     letter-spacing: .6px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -294,9 +365,10 @@ li{
     float: left;
     margin-top: 60px;
     margin-bottom: 50px;
-    width: 100%;
-    display: flex;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .publicidad figcaption{
     font-weight: bold;
@@ -305,10 +377,12 @@ li{
 }
 .publicidad img{
     width: 250px;
-    height: 150px;
+    min-width: 200px;
+    max-width: 450px;
 }
 .publicidad a{
-    margin-right: 25px;
+    margin-top: 20px;
+    margin: 0 10px;
 }
 
 /* Agregando estilos al footer */
@@ -317,12 +391,12 @@ li{
 footer{
     display: flex;
     width: 100%;
-    height: 50px;
+    height: 80px;
     background-color: var(--background-black);
 }
 footer p{
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 200;
     letter-spacing: 0.05rem;
 }
@@ -331,10 +405,14 @@ footer p{
     width: 50%;
     justify-content: center;
     align-items: center;
+    padding: 0 15px;
+    
 }
 .footer-right{
     display: flex;
     width: 50%;
     justify-content: center;
     align-items: center;
+    padding: 0 15px;
+    
 }

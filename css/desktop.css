@@ -1,0 +1,105 @@
+
+.logo{
+    width: auto;
+    margin-left: -4px;
+}
+.search-container{
+    margin: 0;
+    width: auto;
+    margin-bottom: 15px;
+}
+.menu{
+    position: static;
+}
+.search-input{
+    width: 350px;
+    height: 40px;
+}
+.search-div{
+    margin: 0;
+    width: auto;
+}
+.input-button{
+    width: 70px;
+    height: 40px;
+}
+.header-nav--ul{
+    display: flex;
+}
+.header-nav--ul a{
+    color: white;
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Aqui estoy trabandoo el main */
+
+.main-aside{
+    width: 20%;
+    margin-left: 60px;
+}
+.main-aside--lista{
+    list-style: none;
+    width: 100%;
+}
+.main-aside--lista li{
+    margin-bottom: 10px;
+}
+
+.main-aside--lista ol{
+    list-style: none;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.title::after{
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 50px;
+    background: #a1a1a1;
+    content: '';
+}
+.main-content{
+    width: 80%;
+}
+.books-container--portada img{
+    min-width: 140px;
+    max-width: 200px;
+}
+.list-books--ul li{
+    width: 160px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+.descargar{
+    font-size: 0.9rem;
+    height: auto;
+    line-height: 11px;
+    margin-top: 10px;
+    padding: 6px;
+}
+.counter-pages p{
+    font-size: 1rem;
+}
+.publicidad{
+    float: left;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+/* Agregando estilos al footer */
+footer p{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 200;
+    letter-spacing: 0.05rem;
+}

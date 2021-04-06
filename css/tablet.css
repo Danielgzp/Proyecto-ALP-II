@@ -1,0 +1,131 @@
+.header-figure{
+    margin-right: 10px;
+}
+.header-figure img{
+    margin-left: 10px;
+    height: 30px;
+    float: left;
+}
+.search-container{
+    width: 95%;
+}
+.search-div{
+    width: 90%;
+    margin-top: 0;
+}
+.search-input{
+    min-width: 270px;
+    max-width: 350px;
+    height: 35px;
+    margin-top: 15px;
+}
+.input-button{
+    width: 150px;
+    height: 35px;
+}
+.header-nav--ul a{
+    font-size: 1rem;
+}
+.header-nav--ul a:hover{
+    background-color: rgb(61, 59, 59);
+}
+/* Aqui estoy trabandoo el main */
+
+
+.main-section1{
+    display: flex;
+}
+/* Este es el aside del main */
+.categorias{
+    display: none;
+}
+.main-aside{
+    width: 100%;
+    margin-left: 20px;
+    display: inline;
+}
+.main-content{
+    margin-right: 10px;
+    margin: 0 auto;
+}
+.menu{
+    margin-right: 25px;
+}
+.title-list{
+    position: relative;
+    width: 100%;
+    font-size: 1.4rem;
+    letter-spacing: 0.15rem;
+    font-weight: 500;
+    color: #8f8f8f;
+    font-family: 'Roboto', sans-serif;;
+}
+.title-books{
+    font-size: 1.4rem;
+    margin-left: 30px;
+}
+
+/* Libros */
+
+.books-container{
+    margin-right: 10px;
+}
+.books-container--portada{
+    width: auto;
+}
+.books-container--portada img{
+    width: 150px;
+}
+.books-container--portada figcaption{
+    font-size: 1.6rem;
+    line-height: 1.4rem;
+    height: 30px;
+    margin-top: 15px;
+}
+
+.list-books--ul li{
+    float: left;
+    width: 160px;
+    list-style: none;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 45px;
+
+}
+.autor a{
+    font-size: 1.4rem;
+}
+.descargar{
+    font-size: 0.9rem;
+    height: auto;
+    line-height: 11px;
+    margin-top: 10px;
+    padding: 6px;
+}
+.descargar a{
+    letter-spacing: 0.5px;
+}
+.pagination{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+.counter-pages{
+    width: 25%;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+.publi1, .publi2, .publi3{
+    margin: 0 15px;
+}
+.publicidad img{
+    width: 250px;
+    height: 150px;
+}
+
+/* Agregando estilos al footer */
+
+footer p{
+    font-size: 1.4rem;
+}
