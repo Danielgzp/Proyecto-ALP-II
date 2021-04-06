@@ -16,15 +16,6 @@ html{
 }
 header{
     width: 100%;
-    /* position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    min-width: 320px;
-    height: 334px;
-    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%); */
 }
 a{
     text-decoration: none;
@@ -116,31 +107,9 @@ li{
 .header-nav--ul a:hover{
     background-color: rgb(61, 59, 59);
 }
-/* .icon-book{
-    float: left;
-    margin-right: 5px;
-    background-image: url('/images/libro11-removebg.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-.icon-book span{
-    float: left;
-    background: url('/images/libro11-removebg.png') no-repeat;
-    background-size: 100%;
-}
-.icon-heart{
-    float: left;
-    margin-right: 5px;
-    background-image: url('/images/corazon3.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-.icon-heart span{
-    float: left;
-    background: url('/images/corazon3.png') no-repeat;
-    background-size: 100%;
-} */
+
 /* Aqui estoy trabandoo el main */
+
 .main-section1{
     margin-top: 50px;
 }
