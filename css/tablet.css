@@ -51,20 +51,15 @@
 .menu{
     margin-right: 25px;
 }
-.title-list{
-    position: relative;
-    width: 100%;
-    font-size: 1.4rem;
-    letter-spacing: 0.15rem;
-    font-weight: 500;
-    color: #8f8f8f;
-    font-family: 'Roboto', sans-serif;;
+.title-list, .title-books{
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
 }
+    
 .title-books{
-    font-size: 1.4rem;
     margin-left: 30px;
 }
-
 /* Libros */
 
 .books-container{

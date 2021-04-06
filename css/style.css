@@ -221,7 +221,7 @@ li{
     background-repeat: no-repeat;
     float: left;
 }
-.title-books{
+.title-books, .title-list{
     width: 100%;
     text-align: left;
     position: relative;
@@ -230,27 +230,11 @@ li{
     font-weight: bold;
     color: #8f8f8f;
     font-family: 'Roboto',sans-serif;
+}
+.title-books{
     margin-left: 20px;
 }
-.title-books::after{
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    height: 3px;
-    width: 50px;
-    background: #a1a1a1;
-    content: '';
-}
-.title-list{
-    position: relative;
-    font-size: 1.8rem;
-    letter-spacing: 0.5px;
-    font-weight: bold;
-    color: #8f8f8f;
-    font-family: 'Roboto',sans-serif;
-    margin-left: 10px;
-}
-.title-list::after{
+.title-books::after, .title-list::after{
     position: absolute;
     bottom: -5px;
     left: 0;
