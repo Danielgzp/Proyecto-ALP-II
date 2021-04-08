@@ -1,3 +1,4 @@
+<?php require_once "config.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 500px)">
-    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 800px)">
-    <link rel="stylesheet" href="./css/biggerDesktop.css" media="screen and (min-width: 1000px)" >
+    <link rel="stylesheet" href="<?php echo URL;?>css/style.css">
+    <link rel="stylesheet" href="<?php echo URL;?>css/tablet.css" media="screen and (min-width: 500px)">
+    <link rel="stylesheet" href="<?php echo URL;?>css/desktop.css" media="screen and (min-width: 800px)">
+    <link rel="stylesheet" href="<?php echo URL;?>css/biggerDesktop.css" media="screen and (min-width: 1000px)" >
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,700,500,900">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
@@ -39,17 +40,17 @@
                     <h2 class="title-menu">MENÚ<a href="#" id="btn-togle--menu"><span></span></a></h2>
                         <nav class="header-nav">
                             <ul class="header-nav--ul">
-                                <a href="">
+                                <a href="<?php echo URL;?>">
                                     <li>
                                     <P>Todos los libros</P>
                                     </li>
                                 </a>
-                                <a href="">
+                                <a href="#">
                                     <li>
                                         <p>Hacer una contribucion</p>
                                     </li>
                                 </a>
-                                <a href="/login.html">
+                                <a href="<?php echo URL;?>login.php">
                                     <li>
                                         <p>Iniciar Sesión</p>
                                     </li>
