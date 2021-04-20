@@ -25,7 +25,7 @@ header{
     align-items: center;
 }
 .fondo{
-    background-image: url('/images/fondo2.jpg');
+    background-image: url('../images/fondo2.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     height: 93vh;
