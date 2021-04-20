@@ -14,7 +14,7 @@
 <body>
     <header>
         <figure class="logo">
-            <img src="./images/lelibros.jpg" alt="">
+            <a href="<?php echo URL;?>"><img src="<?php echo URL;?>images/logo.png" id="logo"></a>
         </figure>
     </header>
     <main>

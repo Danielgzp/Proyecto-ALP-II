@@ -26,6 +26,11 @@ ul{
 li{
     list-style: none;
 }
+header{
+    background-color: var(--background-black);
+    width: 100%;
+    height: 15vh;
+}
 .header-section{
     background-color: var(--background-black);
     display: flex;
@@ -35,6 +40,7 @@ li{
     padding: 15px 0;
 }
 .wrapper{
+    margin-top: 15px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -44,19 +50,38 @@ li{
 }
 .logo{
     width: 100%;
+    height: 100%;
     margin-left: 10px;
 }
+
 .header-figure{
+    /* position: relative; */
     margin-right: 20px;
     width: 100%;
+    height: 100%;
 }
-.header-figure img{
-    width: 180px;
+
+/* .header-figure:before,
+.header-figure:after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+} */
+img#logo{
+    margin-top: -33px;
+    margin-left: 30px; 
+    width: 100px;
+    height: 100px;
 }
+
 .search-div{
     margin-top: 20px;
 }
 .search-input{
+    margin-left: 15px;
     border-radius: 7px;
     border: 0;
     padding: 0 20px;
@@ -79,6 +104,7 @@ li{
     background-color: orange;
 }
 .header-nav{
+    margin-right: 80px;
     width: 120px;
     display: none;
     background-color: var(--background-black2);
@@ -95,6 +121,7 @@ li{
 }
 
 .header-nav--ul a{
+    margin: 15px 15px;
     color: white;
     font-family: 'Roboto',sans-serif;
     font-size: 1.2rem;
@@ -102,7 +129,7 @@ li{
     letter-spacing: 1px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 .header-nav--ul a:hover{
     background-color: rgb(61, 59, 59);
@@ -111,7 +138,7 @@ li{
 /* Aqui estoy trabandoo el main */
 
 .main-section1{
-    margin-top: 50px;
+    margin-top: 80px;
 }
 .main-aside{
     margin-left: 20px;

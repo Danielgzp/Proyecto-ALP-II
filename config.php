@@ -1,7 +1,7 @@
 <?php
     //Para que todos los estilos css y los archivos javascript sean llamados correctamente
     const URL = "http://localhost/Proyecto-ALP-II/"; // Tiene que llevar la URL de dónde está el proyecto
-    const NAME = "Nombre del sitio";
+    const NAME = "The Dream Books"; //Nombre del sitio
 
 
     //Ignoren, esto es para que salga la alerta

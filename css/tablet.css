@@ -3,10 +3,10 @@
 }
 .header-figure img{
     margin-left: 10px;
-    height: 30px;
     float: left;
 }
 .search-container{
+    margin: auto;
     width: 95%;
 }
 .search-div{

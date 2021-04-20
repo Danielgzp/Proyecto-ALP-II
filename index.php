@@ -21,7 +21,7 @@
 
                 <div class="logo">
                     <figure class="header-figure">
-                        <img src="./images/lelibros.jpg" alt="">
+                        <img id="logo" src="<?php echo URL;?>images/logo.png">
                     </figure>
                 </div>
         
