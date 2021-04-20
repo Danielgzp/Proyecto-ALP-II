@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuenta</title>
+    <title><?php echo NAME;?> | Administrador</title>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,700,500,900">
     <link rel="stylesheet" href="<?php echo URL;?>css/sweetalert2.min.css">
     <link rel="stylesheet" href="<?php echo URL;?>css/semantic.min.css">
@@ -31,7 +31,7 @@
     <div class="ui center aligned container">
         <div id="titulo">
             <h3 class="ui attached header">
-                Bienvenido a la biblioteca
+                Bienvenido a la biblioteca administrador
             </h3>
             <button class="ui orange basic button" id="add">Agregar registro</button>
         </div>

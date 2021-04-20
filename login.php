@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title><?php echo NAME;?> | Iniciar sesión</title>
     <link rel="stylesheet" href="<?php echo URL;?>css/sweetalert2.min.css">
     <link rel="stylesheet" href="<?php echo URL;?>css/login.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,700,500,900">
@@ -38,12 +38,12 @@
                         <form action="ajax/login.php" method="post" class="form">
                             <div class="email-form">
                                 <label for="email">
-                                    <input type="email" placeholder="Tu email" id="email" name="email">
+                                    <input type="email" placeholder="Tu email" id="email" name="email" required>
                                 </label>
                             </div>
                             <div class="password-form">
                                 <label for="pass">
-                                    <input type="password" placeholder="Tu contraseña" id="pass" name="pass">
+                                    <input type="password" placeholder="Tu contraseña" id="pass" name="pass" required>
                                 </label>
                             </div>
                             <label for="sesion">

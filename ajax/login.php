@@ -6,8 +6,10 @@
 
 
             //Si se inicia sesión será redirigido
-            echo "<script> window.location='".URL."cuenta.php'; </script>";
+            echo "<script> window.location='".URL."cuentaAdministrador.php'; </script>";
 
+        }else if($_POST["email"] == "usuario@usuario.com" && $_POST["pass"] == "12345678"){
+            echo "<script> window.location='".URL."cuentaUsuario.php'; </script>";
         }else{
 
             //Si no se inicia sesión saldrá error

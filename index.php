@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto</title>
+    <title><?php echo NAME;?></title>
     <link rel="stylesheet" href="<?php echo URL;?>css/style.css">
     <link rel="stylesheet" href="<?php echo URL;?>css/tablet.css" media="screen and (min-width: 500px)">
     <link rel="stylesheet" href="<?php echo URL;?>css/desktop.css" media="screen and (min-width: 800px)">
@@ -21,7 +21,7 @@
 
                 <div class="logo">
                     <figure class="header-figure">
-                        <img id="logo" src="<?php echo URL;?>images/logo.png">
+                        <a href="<?php echo URL;?>"><img src="<?php echo URL;?>images/logo.png" id="logo"></a>
                     </figure>
                 </div>
         
@@ -276,7 +276,7 @@
                 <div class="publi1">
                     <a href="">
                     <figure>
-                        <img src="./images/publicidad-coca-cola.jpg" alt="">
+                        <img src="./images/publicidad/publicidad-coca-cola.jpg" alt="">
                         <figcaption>Publicidad</figcaption>
                     </figure>
                     </a>
@@ -302,7 +302,7 @@
     </main>
     <footer>
         <section class="footer-left">
-            <p>Echo por los panas © 2016 LeLibros. Todos los derechos reservados a sus respectivos</p>
+            <p>Echo por los panas © 2016 <?php echo NAME;?>. Todos los derechos reservados</p>
         </section>
         <section class="footer-right">
             <p>El mejor lugar para descargar o leer en línea los mejores libros en PDF, Epub y mobi.</p>
